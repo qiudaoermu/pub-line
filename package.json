@@ -1,0 +1,24 @@
+{
+  "name": "original-app-front",
+  "version": "1.0.0",
+  "description": "#### Description 电商模板",
+  "main": "main.js",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "compressing": "^1.5.1",
+    "needle": "^3.0.0",
+    "node-ssh": "^12.0.4"
+  },
+  "scripts": {
+    "pub:prod": "cli publish --platform h5 --project xxx && npm run compress && npm run uploadToService",
+    "compress": "node ./upload-script/compressDir.js",
+    "uploadToService": "node ./upload-script/needle.js ",
+    "backTrace": "node ./upload-script/backTrace.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.cosmoplat.com/10017497-middleground/original-app-front.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
